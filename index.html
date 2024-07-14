@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<!--suppress HtmlRequiredAltAttribute -->
+<html lang="en">
+<head>
+    <title>Contract First vs Code First</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="node_modules/@shower/ribbon/styles/styles.css">
+    <style>
+        .shower {
+            --slide-ratio: calc(16 / 9);
+        }
+        .gray {
+            background-color: lightgray !important;
+        }
+
+    </style>
+</head>
+<body class="shower list">
+
+    <header class="caption">
+        <h1>Contract First vs Code First</h1>
+        <p>Иван Поддубный, CTO Вебпрактик</p>
+    </header>
+
+    <section class="slide clear main-page">
+        <div style="vertical-align: middle;">
+            <img src="pictures/wp-logo-mainpage.svg" class="wp-logo" height="40"
+                 style="margin-right: 40px; vertical-align: middle; position: relative; top: -25px;">
+            <img src="pictures/knowledgebase-conf-logo.svg" class="main-page__logo" height="60">
+        </div>
+
+        <h2 class="fs80" style="margin-top: 130px;">Contract First vs Code First</h2>
+
+        <div class="author" style="font-size: 30px">Иван Поддубный</div>
+        <div class="company" style="font-size: 20px">CTO Webpractik</div>
+
+        <img src="pictures/mainpage-arrow.svg" class="main-page__arrow">
+    </section>
+
+    <section class="slide">
+        <h2>Кто я</h2>
+        <ol>
+            <li>15+ лет в IT (web). Прошел путь fullstack, teamlead</li>
+            <li>Пишу на PHP, Typescript, Nodejs (Nest) и React</li>
+            <li>Влюблен в Linux, OpenSource.</li>
+            <li>Работаю CTO в Вебпрактик (130+)</li>
+            <li>Член программного комитета Podlodka PHP Crew</li>
+            <li>Организатор Ростовского PHP сообщества (500+ человек)</li>
+        </ol>
+        <div class="logo"></div>
+    </section>
+
+    <section class="slide">
+        <h2>О чем будем говорить</h2>
+        <ol>
+            <li>Как построить современный процесс работы с API</li>
+            <li>Сравним подходы ContractFirst vs Api First</li>
+            <li>Как значительно увеличить продуктивность команды и превентивно решать блокеры</li>
+        </ol>
+        <div class="logo"></div>
+    </section>
+
+    <section class="slide">
+        <h2>Что подразумеваем под контрактами</h2>
+        <blockquote>
+            <p>Контракт это формальное соглашение или спецификация, которое определяет, как клиент и сервер должны взаимодействовать между собой</p>
+        </blockquote>
+
+        <div class="logo"></div>
+    </section>
+
+
+    <section class="slide clear">
+        <h2>Современный <br> контракт</h2>
+
+        <p>Должен быть <br>
+            <mark>машиночитаемым!</mark></p>
+
+        <img class="place right" src="images/open-api-meme.png" height="100%">
+
+        <div class="logo"></div>
+    </section>
+
+
+    <section class="slide clear">
+        <img class=" cover" src="images/swagger-editor.png" >
+    </section>
+
+
+    <section class="slide">
+        <div class="columns two">
+            <div class="next">
+                <h2>
+                    <mark>Code</mark> First</h2>
+                <ol>
+                    <li>Пишем <mark>код</mark></li>
+                    <li>На его основе <br>
+                        <mark>генерируем контракт</mark></li>
+                </ol>
+            </div>
+            <div  class="next">
+                <h2>
+                    <mark>Contract</mark> First</h2>
+                <ol>
+                    <li>Пишем контракт</li>
+                    <li>На его основе <br>
+                        <mark>имплементируем код</mark></li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="logo"></div>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout">Строим процесс</h2>
+        <div class="logo"></div>
+    </section>
+
+    <section class="slide">
+        <h2>Малая команда</h2>
+        <ul>
+            <li>Front(N человек) & Back(N человек)</li>
+            <li>Взаимодействуют по API</li>
+            <li>Аналитик не пишет контракт, пишет ТЗ</li>
+            <li>За контракт отвечает бекенд</li>
+        </ul>
+
+        <p style="text-align: center;"><img class="" width="600" src="images/1-back-front.drawio.svg" alt=""></p>
+        <div class="logo"></div>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout">
+            <mark>Code</mark> First</h2>
+        <div class="logo"></div>
+    </section>
+
+
+
+    <section class="slide">
+        <h2 style="margin: 0 0 15px">
+            <mark>Code</mark> First
+        </h2>
+        <p style="text-align: center;"><img class="" width="700" src="images/back-front-code-first-2.drawio.svg" alt=""></p>
+
+        <div class="logo"></div>
+    </section>
+
+
+    <section class="slide">
+        <h2 >
+            <mark>Code</mark> First: что хорошо
+        </h2>
+        <ul>
+            <li>Мы автоматизировали часть процесса</li>
+            <li>Контакт будем
+                <mark style="color: red">максимально</mark> синхронизирован с реализацией</li>
+        </ul>
+
+        <div class="logo"></div>
+    </section>
+
+
+    <section class="slide">
+        <h2 class="shout" style="font-size: 70px;">
+            <mark>Code</mark> First: параллелим работу</h2>
+        <div class="logo"></div>
+    </section>
+
+
+    <section class="slide">
+        <img class="cover" width="700" style="" src="images/back-front-code-first-2.drawio.svg" alt="">
+        <div class="logo"></div>
+
+        <footer class="footer">
+            <p>Параллелим частично</p>
+        </footer>
+    </section>
+
+    <section class="slide">
+        <img class="cover" width="700" style="" src="images/back-front-code-first-3.drawio.svg" alt="">
+        <div class="logo"></div>
+        <footer class="footer">
+            <p>Параллелим полностью</p>
+        </footer>
+    </section>
+
+    <section class="slide">
+        <h2>
+            <mark>Code</mark> First: что хорошо
+        </h2>
+        <ul>
+            <li>Мы автоматизировали часть процесса</li>
+            <li>Контакт будем <b>максимально</b> синхронизирован с реализацией</li>
+            <li>Позволяет работать параллельно (или с небольшой задержкой)</li>
+            <li>Ранее появление тестового сервера позволяет уменьшить время на отладку</li>
+        </ul>
+
+        <div class="logo"></div>
+    </section>
+
+    <section class="slide">
+        <h2>Прокачиваем автоматизацию Frontend'a</h2>
+        <ul>
+            <li>Верстка компонентов</li>
+            <li class="next">Написание и поддержка типов + валидация</li>
+            <li class="next">Написание и поддержка слоя взаимодействия с backend (client)</li>
+            <li class="next">Написание остальной логики</li>
+        </ul>
+        <div class="logo"></div>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout">Прокачиваем автоматизацию Frontend'a</h2>
+        <div class="logo"></div>
+    </section>
+
+    <section class="slide">
+        <h2>Выделяем куски работы Frontender'a</h2>
+        <ul>
+            <li>Верстка компонентов</li>
+            <li>Написание и поддержка типов + валидация
+                <mark>[авто!]</mark></li>
+            <li>Написание и поддержка слоя взаимодействия с backend (client) <mark>[авто!]</mark></li>
+            <li>Написание остальной логики</li>
+        </ul>
+        <div class="logo"></div>
+    </section>
+
+    <section class="slide">
+        <h2>Прокачиваем автоматизацию Frontend'a</h2>
+        <ul>
+            <li>Генерируем из контракта типы данных</li>
+            <li class="next">Генерируем из контракта клиент</li>
+            <li class="next">Серьезно уменьшаем количество ошибок на уровне
+                <ul>
+                    <li>Cтат анализа IDE</li>
+                    <li>Проверок консистентности CI/CD</li>
+                </ul>
+
+            </li>
+            <li class="next">На выходе серьезно сокращаем объем работы и ускоряем работу фронтов</li>
+        </ul>
+        <div class="logo"></div>
+    </section>
+
+
+    <section class="slide">
+        <img class="cover" width="550" src="images/back-front-code-first-4.drawio.svg" alt="">
+        <div class="logo"></div>
+    </section>
+
+
+    <section class="slide">
+        <h2 class="shout" style="font-size: 70px;">Стабильность и блокеры</h2>
+        <div class="logo"></div>
+    </section>
+
+    <section class="slide">
+<!--        <h2>Стабильность</h2>-->
+        <img class="cover" width="550" src="images/back-front-code-first-4.drawio.svg" alt="">
+
+        <div class="spotlight" style="
+            --spotlight-radius: 0;
+            --spotlight-opacity: 0.2;
+            --spotlight-width: 250px;
+            --spotlight-height: 800px;
+            --spotlight-left: 10px;
+        "></div>
+
+        <div class="logo"></div>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout" style="font-size: 70px;">Генерируем mock-server <br>на основе контракта</h2>
+        <div class="logo"></div>
+    </section>
+
+    <section class="slide">
+        <img class="cover" width="550" src="images/back-front-code-first-5.drawio.svg" alt="">
+
+        <div class="spotlight" style="
+            --spotlight-radius: 0;
+            --spotlight-opacity: 0.2;
+            --spotlight-width: 50px;
+            --spotlight-height: 70px;
+            --spotlight-left: -7px;
+            --spotlight-top: 93px;
+        "></div>
+
+        <div class="logo"></div>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout">
+            <mark>Contract</mark> First</h2>
+        <div class="logo"></div>
+    </section>
+
+    <section class="slide">
+        <h2>Варианты:</h2>
+        <ul>
+            <li>Учим аналитика писать спеку в Open/Async API формате</li>
+            <li>Пишем и согласовываем спецификацию руками разработчиков</li>
+        </ul>
+        <div class="logo"></div>
+    </section>
+
+    <section class="slide">
+        <img class="cover" width="700" src="images/contract-first.drawio.svg" alt="">
+        <div class="logo"></div>
+    </section>
+
+
+    <section class="slide">
+        <h2 class="shout">Прокачиваем автоматизацию Backend'a</h2>
+        <div class="logo"></div>
+    </section>
+
+    <section class="slide">
+        <h2>Выделяем куски работы Backend'a</h2>
+        <ul>
+            <li>Написание контроллеров</li>
+            <li>Написание валидаций</li>
+            <li>Написание DTO</li>
+            <li>Написание сервисов</li>
+            <li>Написание моделей</li>
+            <li>Написание миграций</li>
+            <li>Написание бизнес логики</li>
+        </ul>
+        <div class="logo"></div>
+    </section>
+
+    <section class="slide">
+        <h2>Автоматизируем куски работы Backend'a</h2>
+        <ul>
+            <li>Написание контроллеров <mark>[auto]</mark></li>
+            <li>Написание валидаций <mark>[auto]</mark></li>
+            <li>Написание DTO <mark>[auto]</mark></li>
+            <li>Написание сервисов <mark>[auto]</mark></li>
+            <li>Написание моделей <mark class="gray">[auto]</mark></li>
+            <li>Написание миграций <mark class="gray">[auto]</mark></li>
+            <li>Написание бизнес логики</li>
+        </ul>
+        <div class="logo"></div>
+    </section>
+
+    <section class="slide">
+        <img class="cover" width="700" src="images/contract-first-backend-auto.drawio.svg" alt="">
+        <div class="logo"></div>
+    </section>
+
+    <section class="slide">
+        <h2>Автоматизация, что дальше:</h2>
+        <ul>
+            <li>Генерация тестов на api контракты</li>
+            <li class="next">Генерация валидаций входных/выходных ответов</li>
+        </ul>
+        <div class="logo"></div>
+    </section>
+
+    <section class="slide">
+        <h2>Contract генерирует:</h2>
+        @todo схема
+        <div class="logo"></div>
+    </section>
+
+    <section class="slide">
+        <h2>Выводы</h2>
+        <ol>
+            <li>Оба подходы имеют право на жизнь, их можно серьезно прокачать</li>
+            <li>Но contract first имеет больше гибкости</li>
+            <li>В больших компаниях contract first более актуален</li>
+            <li>Не ленитесь внедря автоматизации на основе контракта, они серьезно уменьшают количество ошибок и ускоряют работу</li>
+        </ol>
+        <div class="logo"></div>
+    </section>
+
+    <section class="slide">
+        <h2>Полезные ссылки</h2>
+        @todo
+        <div class="logo"></div>
+    </section>
+
+    <section class="slide">
+        <h2>Спасибо</h2>
+        @todo QR, контакты
+        <div class="logo"></div>
+    </section>
+
+
+    <!--    Задачи и решаемые проблемы:-->
+<!--    - Проектирование контракта-->
+<!--    - Согласование контракта-->
+<!--    - Имплементация контракта-->
+<!--    - Изменения-->
+
+<!--    Источники контрактов-->
+<!--    1. Делает аналитик-->
+<!--    2. Делает техлид/разработчик бекенда-->
+<!--    3. Делает техлид/разработчик фронтенда-->
+
+
+    <section class="slide">
+        <!-- Create your first slide -->
+    </section>
+
+    <footer class="badge">
+        <a href="https://github.com/shower/shower">Fork me on GitHub</a>
+    </footer>
+
+    <div class="progress"></div>
+
+
+    <script src="node_modules/@shower/core/dist/shower.js"></script>
+    <!-- Copyright © 2024 Yours Truly, Famous Inc. -->
+
+</body>
+</html>
