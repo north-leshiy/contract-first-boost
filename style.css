@@ -1,3 +1,12 @@
+* {
+	font-family: "Montserrat", "proxima nova", sans-serif !important;
+}
+
+.shower {
+	--slide-ratio: calc(16 / 9);
+	/*font-family: "Proxima Nova Cn Rg", sans-serif !important;*/
+	/*font:  23px/2 "proxima nova", sans-serif;*/
+}
 
 .shower {
 	--slide-ratio: calc(16 / 9);
@@ -27,9 +36,13 @@
 	font-size: 40px;
 	/*font-family:  "proxima nova", sans-serif;*/
 	/*color: #202020;*/
+	color: var(--color-darkgray);
 	margin-top: -10px;
 }
 
+.shower h2.shout {
+	color: var(--color-orange);
+}
 
 
 .size80 {
@@ -64,13 +77,15 @@
 .slide::after {
 	background: none;
 	color: #C0C1C2;
-	right: 0;
+	right: 11px;
 	left: auto;
-	bottom: -15px;
-	top: auto;
-	text-align: left;
+	top: 12px;
+	bottom: auto;
 	font-family: "Montserrat", "proxima nova", sans-serif !important;
 	font-size: 18px;
+	text-align: center;
+	height: 50px;
+	width: 50px;
 }
 .slide.clear::before {
 	display: none;
@@ -82,7 +97,7 @@
 	height: 75px;
 	left: 50px;
 	bottom: 0;
-	background: url(./images/nastachku.png) no-repeat;
+	background: url(./pictures/knowledgebase-conf-logo.svg) no-repeat;
 	background-size: contain;
 }
 .clear-logo .logo {
@@ -96,6 +111,7 @@
 	position: relative;
 	width: 20px;
 	margin-right: 10px;
+	color: #202020;
 }
 .gray {
 	color: gray;
@@ -111,6 +127,9 @@
 	margin-right: 0;
 }
 
+.main-page h2 {
+
+}
 .main-page .main-page__logo {
 	display: inline-block ;
 	position: relative;
@@ -134,4 +153,31 @@
 	right: 40px;
 	top: 40px;
 	width: 100px;
+}
+
+.page {
+	background: url("./images/page.svg") border-box  #fff;
+	background-size: cover;
+}
+
+.face {
+	background: url("./images/face.svg") border-box;
+	background-size: cover;
+}
+
+.section {
+	background: url("./images/face.svg") border-box;
+	background-size: cover;
+}
+
+
+.section::after {
+	display: none;
+}
+
+.section .shout {
+	color: #fff !important;
+	right: 370px !important;
+	font-size: 65px;
+	width: auto !important;
 }
