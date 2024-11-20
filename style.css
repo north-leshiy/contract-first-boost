@@ -33,7 +33,7 @@
 
 .shower h2 {
 	/*font-weight: 700;*/
-	font-size: 40px;
+	font-size: 30px;
 	/*font-family:  "proxima nova", sans-serif;*/
 	/*color: #202020;*/
 	color: var(--color-darkgray);
@@ -170,7 +170,6 @@
 	background-size: cover;
 }
 
-
 .section::after {
 	display: none;
 }
@@ -180,4 +179,6 @@
 	right: 370px !important;
 	font-size: 65px;
 	width: auto !important;
+	text-align: left !important;
+	padding-left: 50px;
 }

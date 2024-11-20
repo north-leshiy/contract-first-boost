@@ -36,6 +36,7 @@
     <section class="slide clear main-page face">
         <h2 class="fs70" style="margin-top: 20px; font-size: 48px; color: #fff;">Contract First <br>&nbsp;vs Code First</h2>
 
+        <br>
         <div class="author" style="font-size: 36px; color: #fff; font-weight: bold;">Иван Поддубный</div>
         <div class="company" style="font-size: 30px; color: #fff;">CTO Webpractik</div>
 
@@ -52,6 +53,11 @@
             <li>Организатор Ростовского PHP сообщества (500+ человек)</li>
         </ol>
 
+    </section>
+
+    <section class="slide clear">
+        <h2>Вебпрактик &mdash; <br> Digital-интегратор для корпораций</h2>
+        <img  class="cover" src="images/clients.svg" alt="">
     </section>
 
     <section class="slide page">
@@ -163,15 +169,15 @@
 
 
     <section class="slide page">
-        <img style="float: right; margin-right: 7px;" width="650 " src="images/code-annotation.svg" alt="">
+        <img style="float: right; margin-right: 7px;" width="630 " src="images/code-annotation.svg" alt="">
         <h2 style="margin-top: 200px;">
-            <mark>Code</mark> First: <br> как работает
+            <mark>Code</mark> First: <br>как работает
         </h2>
     </section>
 
 
     <section class="slide page">
-        <h2 class="shout" style="font-size: 70px;">
+        <h2 class="shout" style="font-size: 50px;">
             <mark>Code</mark> First: параллелим работу</h2>
 
     </section>
@@ -198,7 +204,7 @@
 
 
     <section class="slide page">
-        <h2 class="shout fs70" style="line-height: 130% !important;">А можно <br>запараллелить <br>
+        <h2 class="shout fs60" style="line-height: 130% !important;">А можно <br>запараллелить <br>
             <mark>сразу</mark>?</h2>
 
     </section>
@@ -234,12 +240,12 @@
     </section>
 
     <section class="slide page">
-        <h2>Выделяем куски работы Frontender'a</h2>
-        <ul>
+        <h2>Выделяем куски работы Frontender'a <br>&nbsp;</h2>
+        <ul style="font-size: 20px;">
             <li>Верстка компонентов</li>
             <li class="next">Написание и поддержка типов + валидация</li>
             <li class="next">Написание и поддержка слоя взаимодействия с backend (client)</li>
-            <li class="next">Написание остальной логики</li>
+            <li class="next">Написание остальной логики и тестов</li>
         </ul>
 
     </section>
@@ -247,12 +253,12 @@
 
     <section class="slide page">
         <h2>Можем автоматизировать на основе контракта:</h2>
-        <ul>
+        <ul style="font-size: 20px;">
             <li>Верстка компонентов</li>
             <li>Написание и поддержка типов + валидация
                 <mark>[авто!]</mark></li>
             <li>Написание и поддержка слоя взаимодействия с backend (client) <mark>[авто!]</mark></li>
-            <li>Написание остальной логики</li>
+            <li>Написание остальной логики и тестов</li>
         </ul>
 
     </section>
@@ -269,7 +275,7 @@
                 </ul>
 
             </li>
-            <li class="next">На выходе серьезно сокращаем объем работы и ускоряем работу фронтов</li>
+            <li class="next">На выходе серьезно сокращаем объем работы <br>и ускоряем работу фронтов</li>
         </ul>
 
     </section>
@@ -282,7 +288,7 @@
 
 
     <section class="slide page">
-        <h2 class="shout" style="font-size: 70px;">Стабильность и блокеры</h2>
+        <h2 class="shout" style="font-size: 50px;">Стабильность и блокеры</h2>
 
     </section>
 
@@ -302,7 +308,7 @@
     </section>
 
     <section class="slide page">
-        <h2 class="shout" style="font-size: 70px;">Генерируем mock-server <br>на основе контракта</h2>
+        <h2 class="shout" style="font-size: 50px;">Генерируем mock-server <br>на основе контракта</h2>
 
     </section>
 
@@ -328,12 +334,15 @@
     </section>
 
     <section class="slide page">
-        <h2>Варианты:</h2>
+        <h2>Как подходим:</h2>
         <ul>
             <li>Учим аналитика писать спеку в Open/Async API формате</li>
-            <li>Пишем и согласовываем спецификацию руками разработчиков</li>
+            <li>Или пишем и согласовываем спецификацию руками разработчиков
+                <span class="next"><img src="images/githubn.png" width="30" alt=""  style="vertical-align: middle;"> <span style="vertical-align: middle;"><b>microsoft/typespec</b>: ~5K звезд</span></span>
+            </li>
+            <li class="next">Кладем спецификацию в отдельный репозиторий</li>
+            <li class="next">Все изменения через MergeRequest с review</li>
         </ul>
-
     </section>
 
     <section class="slide page">
@@ -344,7 +353,6 @@
 
     <section class="slide page section">
         <h2 class="shout fs70">Прокачиваем автоматизацию <br>Backend'a</h2>
-
     </section>
 
     <section class="slide page">
@@ -372,43 +380,110 @@
             <li>Написание миграций <mark class="gray">[auto]</mark></li>
             <li>Написание бизнес логики</li>
         </ul>
-
     </section>
 
     <section class="slide page">
         <img class="cover" width="700" src="images/contract-first-backend-auto.drawio.svg" alt="">
-
     </section>
 
     <section class="slide page">
-        <h2>Автоматизация, что дальше:</h2>
+        <h2>Проверка качества контракта:
+            <mark>Spectral</mark></h2>
         <ul>
-            <li>Генерация тестов на api контракты</li>
-            <li class="next">Генерация валидаций входных/выходных ответов</li>
+            <li>Куча готовых наборов и бестпрактиксов</li>
+            <li>Свой кастомный ruleset</li>
         </ul>
-
+        <img src="images/api-style-guide.png" width="800" alt="">
     </section>
 
     <section class="slide page">
-        <h2>Contract генерирует:</h2>
-        @todo схема
-
+        <h2 style="line-height: 140%; position: relative;z-index: 2;">Проверка качества контракта:
+            <mark>RateMyApi</mark></h2>
+        <img src="images/rate-my-api.png" style="width: 100%; position: absolute; bottom: -40px; left: 0; right: 0;" alt="">
     </section>
 
     <section class="slide page">
-        <h2>Выводы</h2>
+        <h2>Проверка качества контракта</h2>
+        <img src="images/contract-contract-linter.drawio.svg" width="800" alt="">
+    </section>
+
+
+    <section class="slide page">
+        <h2>Уменьшаем время отладки:</h2>
+        <ol>
+            <li>Инструментарий для контроля соблюдения контрактов</li>
+            <li>Инструментарий для тестирования</li>
+            <li>Инструментарий для визуального тестирования</li>
+        </ol>
+    </section>
+
+    <section class="slide page">
+        <h2>Проверка соблюдения контрактов:</h2>
+        <img src="images/contract-validators.drawio.svg" width="500" style="position: absolute;right: 80px;" alt="">
+        <ul style="position: relative;z-index: 2;">
+            <li>На стороне сервера и клиента</li>
+            <li>Контролируем критичность</li>
+        </ul>
+    </section>
+
+    <section class="slide page">
+        <h2>Контрактное тестирование:</h2>
+        <img src="images/contract-test.drawio.svg" width="800" style="" alt="">
+    </section>
+
+    <section class="slide page clear">
+        <h2>Инструменты визуального тестирования: SwaggerUI</h2>
+        <img src="images/swagger-ui.png" style="width: 700px;" alt="">
+    </section>
+
+    <section class="slide page">
+        <h2 style="font-size: 29px; color: gray;"><s>SwaggerUI</s></h2>
+        <h2 style="font-size: 30px;">Elements</h2>
+        <img src="images/elements.png" style="width: 800px; position: absolute; right: 0; top: 0;" alt="">
+    </section>
+
+    <section class="slide page section">
+        <h2 class="shout">Выводы</h2>
+    </section>
+
+    <section class="slide page">
+        <h2>Выводы: <mark>Code</mark> First</h2>
+        <ol style="font-size: 22px;">
+            <li>Code First может быть не менее контракто-центричен чем ContractFirst</li>
+            <li>Code First немного отстает с появлением контракта в рамках процесса, но не критично</li>
+            <li>Качество контракта может в CodeFirst проседать по сравнению с ContractFirst, но это решается регламентом и линтингом</li>
+            <li>С CodeFirst проще стартовать, и его поддерживают по умолчанию все фреймворки</li>
+            <li>Подход по-прежнему актуален, востребован, инструменты развиваются</li>
+        </ol>
+    </section>
+
+    <section class="slide page">
+        <h2>Выводы: <mark>Contract</mark> First</h2>
+        <ol>
+            <li>Простор оптимизации процессов в ContractFirst больше</li>
+            <li>Подход больше подходит для больших команд и проектов</li>
+            <li>Возможность обнаруживать проблемы на более ранних этапах</li>
+        </ol>
+    </section>
+
+    <section class="slide page">
+        <h2>Итог</h2>
         <ol>
             <li>Оба подходы имеют право на жизнь, их можно серьезно прокачать</li>
-            <li>Но contract first имеет больше гибкости</li>
-            <li>В больших компаниях contract first более актуален</li>
-            <li>Не ленитесь внедря автоматизации на основе контракта, они серьезно уменьшают количество ошибок и ускоряют работу</li>
+            <li>Не ленитесь внедрять автоматизации на основе контракта, они серьезно уменьшают количество ошибок и ускоряют работу</li>
         </ol>
-
     </section>
 
     <section class="slide page">
         <h2>Полезные ссылки</h2>
-        @todo
+        <ul>
+            <li><a href="https://kubb.dev/">Kubb</a> &mdash; швейцарский нож для автоматизации frontend</li>
+            <li><a href="https://github.com/stoplightio/prism">Prism</a> &mdash; Mock by OpenApi generator</li>
+            <li><a href="https://github.com/stoplightio/spectral">Spectral</a> &mdash; Api styleguide</li>
+            <li><a href="https://github.com/stoplightio/elements">Elements</a> &mdash; Альтернатива SwaggerUI</li>
+            <li><a href="https://ratemyopenapi.com/">RateMyAPI</a> &mdash; линтер + визуальные отчеты</li>
+            <li><a href="https://dredd.org/en/latest/">Dredd</a> &mdash; контрактные тесты на основе API</li>
+        </ul>
 
     </section>
 
