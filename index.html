@@ -50,7 +50,7 @@
             <li>Влюблен в Linux, OpenSource.</li>
             <li>Работаю CTO в Вебпрактик (130+)</li>
             <li>Член программного комитета Podlodka PHP Crew</li>
-            <li>Организатор Ростовского PHP сообщества (500+ человек)</li>
+            <li>Организатор Ростовского PHP-сообщества (500+ человек)</li>
         </ol>
 
     </section>
@@ -70,15 +70,15 @@
     </section>
 
     <section class="slide page">
-        <h2 class="">Проблемы техлидов при работе с контрактами:</h2>
+        <h2 class="">Проблемы техлидов при работе с контрактами</h2>
         <ul>
-            <li>Проблема неактуальной документация</li>
+            <li>Проблема неактуальной документации</li>
             <li>Проблема не достаточной полноты описания контрактов</li>
             <li>Потери эффективности на согласовании контрактов</li>
-            <li>Поддержка качества контрактов</li>
-            <li>Блокеры процессов из-за отложенной поставки контракта</li>
+            <li>Поддержка качества контрактов (соблюдение стандартов и лучших практик)</li>
+            <li>Блокеры процессов из-за сообщества поставки контракта</li>
             <li>Блокеры процессов из-за зависимости клиентов и QA от тестовых контуров</li>
-            <li>Построение цепочки взаимодействия с QA</li>
+            <li>Проблемы тестирования контрактов</li>
             <li class="next">✋</li>
         </ul>
     </section>
@@ -107,7 +107,7 @@
     <section class="slide page">
         <h2>Что подразумеваем под контрактами</h2>
         <blockquote>
-            <p>Контракт это формальное соглашение или спецификация, которое определяет, как клиент и сервер должны взаимодействовать между собой</p>
+            <p>Контракт &mdash; это формальное соглашение или спецификация, которое определяет, как клиент и сервер должны взаимодействовать между собой</p>
         </blockquote>
     </section>
 
@@ -178,7 +178,7 @@
             <li>Front(N человек) & Back(N человек)</li>
             <li>Взаимодействуют по API</li>
             <li>Аналитик не пишет контракт, пишет ТЗ</li>
-            <li>За контракт отвечает бекенд</li>
+            <li>За контракт отвечает backend</li>
         </ul>
 
         <p style="text-align: center;"><img  width="600" src="images/1-back-front.drawio.svg" alt=""></p>
@@ -207,7 +207,7 @@
         </h2>
         <ul>
             <li>Мы автоматизировали часть процесса</li>
-            <li>Контракт будем
+            <li>Контракт будет
                 <mark style="color: red">максимально</mark> синхронизирован с реализацией</li>
         </ul>
     </section>
@@ -270,7 +270,7 @@
         </h2>
         <ul>
             <li class="lightgray">Мы автоматизировали часть процесса</li>
-            <li class="lightgray">Контракт будем <b>максимально</b> синхронизирован с реализацией</li>
+            <li class="lightgray">Контракт будет <b>максимально</b> синхронизирован с реализацией</li>
             <li>Позволяет работать параллельно (или с небольшой задержкой)</li>
             <li>Раннее появление тестового сервера позволяет уменьшить время на отладку</li>
         </ul>
@@ -297,7 +297,7 @@
 
 
     <section class="slide page">
-        <h2>Можем автоматизировать на основе контракта:</h2>
+        <h2>Можем автоматизировать на основе контракта</h2>
         <ul style="font-size: 20px;">
             <li>Верстка компонентов</li>
             <li>Написание и поддержка типов + валидация
@@ -315,7 +315,7 @@
             <li class="next">Генерируем из контракта клиент</li>
             <li class="next">Серьезно уменьшаем количество ошибок на уровне
                 <ul>
-                    <li>Cтат анализа IDE</li>
+                    <li>Cтат. анализа IDE</li>
                     <li>Проверок консистентности CI/CD</li>
                 </ul>
 
@@ -379,9 +379,9 @@
     </section>
 
     <section class="slide page">
-        <h2>Как подходим:</h2>
+        <h2>Как подходим</h2>
         <ul>
-            <li>Учим аналитика писать спеку в Open/Async API формате</li>
+            <li>Учим аналитика писать спеку в Open/Async API-формате</li>
             <li>Или пишем и согласовываем спецификацию руками разработчиков
                 <span class="next"><img src="images/githubn.png" width="30" alt=""  style="vertical-align: middle;"> <span style="vertical-align: middle;"><b>microsoft/typespec</b>: ~5K звезд</span></span>
             </li>
@@ -409,13 +409,13 @@
             <li>Написание сервисов</li>
             <li>Написание моделей</li>
             <li>Написание миграций</li>
-            <li>Написание бизнес логики</li>
+            <li>Написание бизнес-логики</li>
         </ul>
 
     </section>
 
     <section class="slide page">
-        <h2>Что можно автоматизировать на основе контракта:</h2>
+        <h2>Что можно автоматизировать на основе контракта</h2>
         <ul>
             <li>Написание контроллеров <mark>[auto]</mark></li>
             <li>Написание валидаций <mark>[auto]</mark></li>
@@ -423,7 +423,7 @@
             <li>Написание сервисов <mark>[auto]</mark></li>
             <li>Написание моделей <mark class="gray">[auto]</mark></li>
             <li>Написание миграций <mark class="gray">[auto]</mark></li>
-            <li>Написание бизнес логики</li>
+            <li>Написание бизнес-логики</li>
         </ul>
     </section>
 
@@ -435,7 +435,7 @@
         <h2>Проверка качества контракта:
             <mark>Spectral</mark></h2>
         <ul>
-            <li>Куча готовых наборов и бестпрактиксов</li>
+            <li>Куча готовых наборов и best practices</li>
             <li>Свой кастомный ruleset</li>
         </ul>
         <img src="images/api-style-guide.png" width="800" alt="">
@@ -454,7 +454,7 @@
 
 
     <section class="slide page">
-        <h2>Уменьшаем время отладки:</h2>
+        <h2>Уменьшаем время отладки</h2>
         <ol>
             <li>Инструментарий для контроля соблюдения контрактов</li>
             <li>Инструментарий для тестирования</li>
@@ -463,7 +463,7 @@
     </section>
 
     <section class="slide page">
-        <h2>Проверка соблюдения контрактов:</h2>
+        <h2>Проверка соблюдения контрактов</h2>
         <img src="images/contract-validators.drawio.svg" width="500" style="position: absolute;right: 80px;" alt="">
         <ul style="position: relative;z-index: 2;">
             <li>На стороне сервера и клиента</li>
@@ -494,7 +494,7 @@
     <section class="slide page">
         <h2>Выводы: <mark>Code</mark> First</h2>
         <ol style="font-size: 22px;">
-            <li>Code First может быть не менее контракто-центричен чем ContractFirst</li>
+            <li>Code First может быть не менее контракто-центричен, чем ContractFirst</li>
             <li>Code First немного отстает с появлением контракта в рамках процесса, но не критично</li>
             <li>Качество контракта может в CodeFirst проседать по сравнению с ContractFirst, но это решается регламентом и линтингом</li>
             <li>С CodeFirst проще стартовать, и его поддерживают по умолчанию все фреймворки</li>
@@ -515,7 +515,7 @@
     <section class="slide page">
         <h2>Итог</h2>
         <ol>
-            <li>Оба подходы имеют право на жизнь, их можно серьезно прокачать</li>
+            <li>Оба подхода имеют право на жизнь, их можно серьезно прокачать</li>
             <li>Не ленитесь внедрять автоматизации на основе контракта, они серьезно уменьшают количество ошибок и ускоряют работу</li>
         </ol>
     </section>
@@ -524,9 +524,9 @@
         <h2>Полезные ссылки</h2>
         <ul>
             <li><a href="https://kubb.dev/">Kubb</a> &mdash; швейцарский нож для автоматизации frontend</li>
-            <li><a href="https://github.com/stoplightio/prism">Prism</a> &mdash; Mock by OpenApi generator</li>
-            <li><a href="https://github.com/stoplightio/spectral">Spectral</a> &mdash; Api styleguide</li>
-            <li><a href="https://github.com/stoplightio/elements">Elements</a> &mdash; Альтернатива SwaggerUI</li>
+            <li><a href="https://github.com/stoplightio/prism">Prism</a> &mdash; mock by OpenApi generator</li>
+            <li><a href="https://github.com/stoplightio/spectral">Spectral</a> &mdash; api styleguide</li>
+            <li><a href="https://github.com/stoplightio/elements">Elements</a> &mdash; альтернатива SwaggerUI</li>
             <li><a href="https://ratemyopenapi.com/">RateMyAPI</a> &mdash; линтер + визуальные отчеты</li>
             <li><a href="https://dredd.org/en/latest/">Dredd</a> &mdash; контрактные тесты на основе API</li>
         </ul>
