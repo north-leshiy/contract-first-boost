@@ -140,7 +140,7 @@
 }
 
 .main-page .author {
-	color: #FF5107;
+	/*color: #FF5107;*/
 	font-feature-settings: 'clig' off, 'liga' off;
 	font-size: 61px;
 	font-style: normal;
@@ -156,17 +156,17 @@
 }
 
 .page {
-	background: url("./images/page.svg") border-box  #fff;
+	/*background: url("./images/page.svg") border-box  #fff;*/
 	background-size: cover;
 }
 
 .face {
-	background: url("./images/face.svg") border-box;
+	/*background: url("./images/face.svg") border-box;*/
 	background-size: cover;
 }
 
 .section {
-	background: url("./images/face.svg") border-box;
+	/*background: url("./images/face.svg") border-box;*/
 	background-size: cover;
 }
 
@@ -175,7 +175,7 @@
 }
 
 .section .shout {
-	color: #fff !important;
+	/*color: #fff !important;*/
 	right: 370px !important;
 	font-size: 65px;
 	width: auto !important;
