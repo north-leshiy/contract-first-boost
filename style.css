@@ -24,7 +24,7 @@
 	--progress-size: 7px;
 
 
-	color: var(--color-darkgray);
+	color: var(--color-lightgrey);
 }
 
 .progress::before {
@@ -97,7 +97,6 @@
 	height: 75px;
 	left: 50px;
 	bottom: 0;
-	background: url(./pictures/knowledgebase-conf-logo.svg) no-repeat;
 	background-size: contain;
 }
 .clear-logo .logo {
@@ -157,11 +156,12 @@
 
 .page {
 	/*background: url("./images/page.svg") border-box  #fff;*/
-	background-size: cover;
+	/*background-size: cover;*/
+	background: #000000;
 }
 
 .face {
-	/*background: url("./images/face.svg") border-box;*/
+	background: url("./images/face.svg") border-box;
 	background-size: cover;
 }
 
