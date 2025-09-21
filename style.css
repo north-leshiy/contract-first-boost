@@ -1,11 +1,10 @@
 * {
-	font-family: "Montserrat", "proxima nova", sans-serif !important;
+	font-family: "Onest", sans-serif !important;
+	font-optical-sizing: auto;
 }
 
 .shower {
 	--slide-ratio: calc(16 / 9);
-	/*font-family: "Proxima Nova Cn Rg", sans-serif !important;*/
-	/*font:  23px/2 "proxima nova", sans-serif;*/
 }
 
 .shower {
@@ -13,9 +12,11 @@
 	--slide-side: 100px;
 	--color-blue: #4b86c2;
 	--color-blue-lighter: #6799cb;
+	--color-white: #fff;
 	--color-red: #cc0000;
 	--color-yellow: #fafaa2;
 	--color-grey: #585a5e;
+	--color-green: #0B8354;
 	--color-lightgrey: #C0C1C2;
 	--color-orange: #000;
 	--color-darkgray: #222;
@@ -24,26 +25,40 @@
 	--progress-size: 7px;
 
 
-	color: var(--color-lightgrey);
+	color: var(--color-white);
 }
 
 .progress::before {
-	background-color: var(--color-lightgrey);
+	background-color: var(--color-white);
 }
 
 .shower h2 {
-	/*font-weight: 700;*/
 	font-size: 30px;
-	/*font-family:  "proxima nova", sans-serif;*/
-	/*color: #202020;*/
-	color: var(--color-darkgray);
-	margin-top: -10px;
+	color: #fff;
+	/*color: var(--color-lightgrey);*/
+	margin-top: -5px;
+	margin-bottom: 60px;
+	text-transform: uppercase;
 }
 
 .shower h2.shout {
 	color: var(--color-orange);
 }
 
+.slide ul li::before{
+	color: var(--color-white);
+}
+.slide ol li::before{
+	color: var(--color-white);
+	/*opacity: 1;*/
+	/*width: 40px;*/
+	/*height: 40px;*/
+	/*background-color: #0B8354;*/
+	/*display: inline-block;*/
+	/*border-radius: 40px;*/
+	/*text-align: center;*/
+	/*margin-left: 50px;*/
+}
 
 .size80 {
 	font-size: 80px !important;
@@ -76,12 +91,11 @@
 
 .slide::after {
 	background: none;
-	color: #C0C1C2;
+	color: #0B8354;
 	right: 11px;
 	left: auto;
-	top: 12px;
-	bottom: auto;
-	font-family: "Montserrat", "proxima nova", sans-serif !important;
+	top: auto;
+	bottom: 15px;
 	font-size: 18px;
 	text-align: center;
 	height: 50px;
@@ -155,9 +169,13 @@
 }
 
 .page {
-	/*background: url("./images/page.svg") border-box  #fff;*/
-	/*background-size: cover;*/
-	background: #000000;
+	background: url("./images/green-with-wrapper.svg") border-box #000;
+	background-size: cover;
+}
+
+.page-default {
+	background: url("./images/green-with-wrapper.svg") border-box #000;
+	background-size: cover;
 }
 
 .face {
@@ -166,7 +184,7 @@
 }
 
 .section {
-	/*background: url("./images/face.svg") border-box;*/
+	background: url("./images/green-with-solo-wrapper.svg") border-box;
 	background-size: cover;
 }
 
@@ -175,10 +193,40 @@
 }
 
 .section .shout {
-	/*color: #fff !important;*/
-	right: 370px !important;
+	color: #fff !important;
+	/*right: 370px !important;*/
 	font-size: 65px;
-	width: auto !important;
-	text-align: left !important;
-	padding-left: 50px;
+	/*width: auto !important;*/
+	/*text-align: left !important;*/
+	/*padding-left: 50px;*/
+}
+
+.header-two-lines {
+	margin-top: -25px !important;
+	line-height: 120% !important;
+}
+
+.slide blockquote::before {
+	margin: -0.10em 0 0 -0.60em;
+}
+.slide blockquote {
+	padding-left: 60px;
+}
+
+.slide mark {
+	background-color: var(--color-green);
+}
+
+.page-black {
+	background: var(--color-black);
+}
+
+.page-green {
+	background: url("./images/greeen-slide-with-white.svg") border-box;
+	background-size: cover;
+}
+
+.page-green-full {
+	background: url("./images/greeen-slide-with-white-section.svg") border-box;
+	background-size: cover;
 }
