@@ -64,6 +64,15 @@
     </section>
 
     <section class="slide page">
+        <h2>Знакомимся</h2>
+        <ol>
+            <li class="next">Кто из вас из заказной разработки?</li>
+            <li class="next">Кто из продуктовой?</li>
+        </ol>
+    </section>
+
+
+    <section class="slide page">
         <h2>О чем будем говорить</h2>
         <ol>
             <li class="next">Как построить современный процесс работы с API</li>
@@ -332,7 +341,48 @@
 
     <section class="slide page-green-full">
         <img class="cover" width="700" src="images/back-front-code-first-4.svg" alt="">
+    </section>
 
+    <section class="slide  clear">
+        <img class="cover" src="images/kubb.png" alt="">
+    </section>
+
+    <section class="slide  page">
+        <h2>Kubb</h2>
+        <ul>
+            <li>Генерирует клиент на TS в виде:
+                <ul>
+                    <li>Axios</li>
+                    <li>ReactQuery</li>
+                    <li>SWR</li>
+                </ul>
+            </li>
+            <li class="next">Использует MSW для mock сервера</li>
+            <li class="next">Использует faker для mock data</li>
+            <li class="next">Генерирует ZOD валидацию по схеме</li>
+        </ul>
+    </section>
+
+    <section class="slide  page">
+        <h2>Kubb + MCP</h2>
+        <p><b><a href="https://kubb.dev/plugins/plugin-mcp/">@kubb/plugin-mcp</a></b></p>
+        <h2>Зачем ? ✋</h2>
+    </section>
+
+    <section class="slide  page">
+        <h2>Static codegen vs AI codegen</h2>
+        <ul>
+            <li class="next">AI codegen не детерминирован</li>
+            <li class="next">На статическую кодогенерацию не нужно делать ревью</li>
+        </ul>
+    </section>
+
+    <section class="slide  page">
+        <h2>Выводы по кодегену:</h2>
+        <ul>
+            <li class="next">Все что можем сгенерировать статично &mdash; генерируем статично</li>
+            <li class="next">AI генерирует бизнес логику и тесты</li>
+        </ul>
     </section>
 
 
@@ -342,9 +392,7 @@
     </section>
 
     <section class="slide page-green-full">
-<!--        <h2>Стабильность</h2>-->
         <img class="cover" width="700" src="images/back-front-code-first-4.svg" alt="">
-
         <div class="spotlight" style="
             --spotlight-radius: 0;
             --spotlight-opacity: 0.2;
@@ -352,8 +400,6 @@
             --spotlight-height: 800px;
             --spotlight-left: 12px;
         "></div>
-
-
     </section>
 
     <section class="slide section">
@@ -372,9 +418,65 @@
             --spotlight-left: -9px;
             --spotlight-top: 142px;
         "></div>
-
-
     </section>
+
+    <section class="slide page">
+        <h2 class="">Mock server</h2>
+        <ul>
+            <li>MSW</li>
+            <li>Prism</li>
+        </ul>
+    </section>
+
+
+    <section class="slide  clear " style="background-color: #171717 !important;">
+        <img class="cover" src="images/msw.png" alt="">
+    </section>
+
+    <section class="slide page">
+        <h2 class="">MSW</h2>
+        <ul>
+            <li>Работает в браузере (по умолчанию) или в nodejs сервере</li>
+            <li>Использует faker для генерации mock данных</li>
+        </ul>
+    </section>
+
+    <section class="slide  clear">
+        <img class="" src="images/prism.png" style="
+            width: 1200px;
+            margin-left: -150px;
+            margin-top: -50px;
+        " alt="">
+        <img class="" src="images/prism-footer.png" style="
+            width: 100%;
+        " alt="">
+    </section>
+
+    <section class="slide page-black">
+        <img class="cover" src="images/x-faker.svg" style="
+            /*width: 100%;*/
+        " alt="">
+    </section>
+
+    <section class="slide  clear">
+        <img class="" src="images/prism.png" style="
+            width: 1200px;
+            margin-left: -150px;
+            margin-top: -50px;
+        " alt="">
+        <img class="" src="images/prism-footer.png" style="
+            width: 100%;
+        " alt="">
+        <div class="spotlight" style="
+            --spotlight-radius: 0;
+            --spotlight-opacity: 0.8;
+            --spotlight-width: 100px;
+            --spotlight-height: 140px;
+            --spotlight-left: 370px;
+            --spotlight-top: 175px;
+        "></div>
+    </section>
+
 
     <section class="slide section">
         <h2 class="shout">
@@ -386,9 +488,7 @@
         <h2>Как подходим</h2>
         <ul>
             <li>Учим аналитика писать спеку в Open/Async API-формате</li>
-            <li>Или пишем и согласовываем спецификацию руками разработчиков
-                <span class="next"><img src="images/githubn.png" width="30" alt=""  style="vertical-align: middle;"> <span style="vertical-align: middle;"><b>microsoft/typespec</b>: ~5K звезд</span></span>
-            </li>
+            <li>Или пишем и согласовываем спецификацию руками разработчиков</li>
             <li class="next">Кладем спецификацию в отдельный репозиторий</li>
             <li class="next">Все изменения через MergeRequest с review</li>
         </ul>
@@ -396,9 +496,43 @@
 
     <section class="slide page-green-full">
         <img class="cover" width="700" src="images/contract-first.svg" alt="">
-
     </section>
 
+    <section class="slide page clear" style="background: #f5f5f5;">
+        <img class="cover" src="images/typespec-intro.png" alt="">
+    </section>
+
+    <section class="slide page-black">
+        <img class="" src="images/typespec.svg" alt="" width="500" style="
+            float: left
+        ">
+        <img class="" src="images/typespec-openapi.svg" width="200" alt="" style="
+            float: left
+        ">
+    </section>
+
+    <section class="slide page">
+        <h2>AI генерация контракта</h2>
+        <ol>
+            <li>Сильно ускоряет</li>
+            <li class="next">SpecDrivenDevelopment</li>
+        </ol>
+    </section>
+
+    <section class="slide page-green-full">
+        <img class="cover" width="700" src="images/contract-first.svg" alt="">
+        <i style="
+            position: absolute;
+            top: 350px;
+            left: 185px;
+            color: #000;
+            font-size: 13px !important;
+            font-weight: bold;
+            background: var(--color-red);
+            padding: 5px 10px;
+            border-radius: 10px;
+        ">AI boost</i>
+    </section>
 
     <section class="slide page section">
         <h2 class="shout fs70">Прокачиваем автоматизацию <br>Backend'a</h2>
@@ -413,7 +547,7 @@
             <li>Написание сервисов</li>
             <li>Написание моделей</li>
             <li>Написание миграций</li>
-            <li>Написание бизнес-логики</li>
+            <li>Написание бизнес-логики и тестов</li>
         </ul>
 
     </section>
@@ -427,12 +561,20 @@
             <li>Написание сервисов <mark>[auto]</mark></li>
             <li>Написание моделей <mark class="gray">[auto]</mark></li>
             <li>Написание миграций <mark class="gray">[auto]</mark></li>
-            <li>Написание бизнес-логики</li>
+            <li>Написание бизнес-логики и тестов</li>
         </ul>
     </section>
 
     <section class="slide page-green-full">
         <img class="cover" width="700" src="images/contract-first-backend-auto.svg" alt="">
+    </section>
+
+    <section class="slide page">
+        <h2>Проверка качества контракта:</h2>
+        <ul>
+            <li>Spectral / RateMyApi</li>
+            <li>AI review</li>
+        </ul>
     </section>
 
     <section class="slide page">
@@ -454,11 +596,23 @@
         <img src="images/rate-my-api.png" style="width: 100%; position: absolute; bottom: -40px; left: 0; right: 0;" alt="">
     </section>
 
+    <section class="slide clear page-black">
+        <img class="cover" src="images/oas-diff.png" alt="">
+    </section>
+
+    <section class="slide page">
+        <h2 style="line-height: 140%; position: relative;z-index: 2;">Проверка качества контракта:
+            <mark>AI</mark></h2>
+        <ul>
+            <li>Внедряем промпт проверки в гитлаб небольшим скриптом</li>
+            <li>Делаем в виде advisory (не блокирующий merge)</li>
+        </ul>
+    </section>
+
     <section class="slide page-green-full">
         <h2>Проверка качества контракта</h2>
         <p style="text-align: center;"><img src="images/contract-contract-linter.svg" width="750" alt=""></p>
     </section>
-
 
     <section class="slide page">
         <h2>Уменьшаем время отладки</h2>
@@ -478,9 +632,41 @@
         </ul>
     </section>
 
+    <section class="slide  clear">
+        <img class="" src="images/prism.png" style="
+            width: 1200px;
+            margin-left: -150px;
+            margin-top: -50px;
+        " alt="">
+        <img class="" src="images/prism-footer.png" style="
+            width: 100%;
+        " alt="">
+        <div class="spotlight" style="
+            --spotlight-radius: 0;
+            --spotlight-opacity: 0.8;
+            --spotlight-width: 100px;
+            --spotlight-height: 140px;
+            --spotlight-left: 370px;
+            --spotlight-top: 175px;
+        "></div>
+    </section>
+
+
+    <section class="slide page section">
+        <h2 class="shout">Контрактное тестирование</h2>
+    </section>
+
     <section class="slide page-green">
         <h2>Контрактное тестирование:</h2>
         <p style="text-align: left;"><img src="images/contract-test.svg" width="650" style="" alt=""></p>
+    </section>
+
+    <section class="slide page">
+        <h2>Контрактное тестирование:</h2>
+        <ul>
+            <li>Dredd + LLM</li>
+            <li>Prism + Schemathesis + LLM</li>
+        </ul>
     </section>
 
     <section class="slide section ">
@@ -492,16 +678,6 @@
         <h2 style="font-size: 25px; color: gray;"><s>SwaggerUI</s></h2>
         <h2 style="font-size: 25px;">Elements</h2>
         <img src="images/elements.png" style="width: 800px; position: absolute; right: 0; top: 0;" alt="">
-    </section>
-
-    <section class="slide page">
-        <h2>AI</h2>
-        <ol>
-            <li>Сильно помогает в генерации контракта <span class="next">(+SpecDrivenDevelopment)</span></li>
-            <li class="next">Позволяет генерировать тесты на базе контракта</li>
-            <li class="next">Позволяет генерировать моки на базе контракта</li>
-            <li class="next">AI code generator vs Algorithm code generator</li>
-        </ol>
     </section>
 
     <section class="slide page section">
@@ -564,7 +740,16 @@
             <li><a href="https://ratemyopenapi.com/">RateMyAPI</a> &mdash; линтер + визуальные отчеты</li>
             <li><a href="https://dredd.org/en/latest/">Dredd</a> &mdash; контрактные тесты на основе API</li>
         </ul>
+    </section>
 
+    <section class="slide page">
+        <h2>Полезные ссылки (бонус) for Bitrix</h2>
+        <ul>
+            <li>
+                Code First: <a href="https://github.com/webpractik/bitrixoa">https://github.com/webpractik/bitrixoa</a>
+                Contract First: <a href="https://github.com/webpractik/bitrixapigen">https://github.com/webpractik/bitrixapigen</a>
+            </li>
+        </ul>
     </section>
 
     <section class="slide clear">
